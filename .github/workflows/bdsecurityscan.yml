@@ -8,7 +8,7 @@ on:
     branches: [ main, master, develop, stage, release ]
   workflow_dispatch:
 jobs:
-  polaris:
+  Polaris Security Scan:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Source
@@ -28,8 +28,8 @@ jobs:
         polaris_application_name: 'susantoblackduck-CICD'
         polaris_project_name: 'bd-integrations-lab1|GitHub Actions'
         polaris_prComment_enabled: 'true'
-        polaris_reports_sarif_create: 'true'
-        polaris_upload_sarif_report: 'true'
+        #polaris_reports_sarif_create: 'true'
+        #polaris_upload_sarif_report: 'true'
         github_token: ${{ secrets.POLARIS_GITHUB_TOKEN }}
         # include_diagnostics: true
 #    - name: Save Logs

@@ -8,7 +8,7 @@ on:
     branches: [ main, master, develop, stage, release ]
   workflow_dispatch:
 jobs:
-  Polaris Security Scan:
+  Polaris-Security-Scan:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Source
